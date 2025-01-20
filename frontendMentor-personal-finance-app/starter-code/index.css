@@ -1,0 +1,111 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+    background-color: #F8F4F0;
+}
+
+#overview-page {
+    background-color: #F8F4F0;
+    height: 100%;
+}
+
+#quick-glance-row {
+    display: flex;
+    flex-direction: row;
+}
+
+#pots-overview-glance {
+    display: flex;
+    flex-direction: row;
+}
+
+.quick-cards {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    width: 100%;
+}
+
+.quick-card {
+    width: 437.33px;
+    height: 119px;
+    border-radius: 12px;
+    background-color: white;
+    color: grey;
+}
+
+.dark-card {
+    background-color: black;
+    color: white;
+}
+
+/* #pots-overview-glance {
+    background-color: yellow;
+    display: flex;
+    flex-direction: row;
+} */
+
+
+/* Columns Container for columns and sections pots, transactions, budgets, recurring bills */ 
+
+#columns-container {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    /* background-color: orange; */
+    gap: 24px;
+}
+
+#overview-page-column-1 {
+    /* background-color: yellow; */
+    width: 50%;
+    height: 100%;
+}
+
+#overview-page-column-2 {
+    background-color: pink;
+    width: 50%;
+    height: 100%;
+}
+
+/* Pots Quick Glance Card */
+#pots-overview-glance {
+    background-color: white;
+    /* width: 608px; */
+    height: 218px;
+    border-radius: 12px;
+}
+
+/* Transactions Quick Glance Card */
+#transactions-overview-glance {
+    /* width: 608px; */
+    height: 519px;
+    background-color: white;
+    border-radius: 12px;
+}
+
+/* Budget Breakdown Quick Glance Card */
+#budgets-overview-glance {
+    background-color: white;
+    /* width: 608px; */
+    height: 218px;
+    border-radius: 12px;
+}
+
+/* Recurring Bills Quick Glance Card */
+#overview-page-recurring-bills-glance {
+    /* width: 608px; */
+    height: 519px;
+    background-color: white;
+    border-radius: 12px;
+}
