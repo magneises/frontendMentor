@@ -3,88 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-
   <link rel="stylesheet" href="./index.css">
-  
-  <title>Frontend Mentor | Personal finance app - Overview</title>
+  <title>Personal Finance App - Overview</title>
 </head>
-  <body>
+<body>
 
-    <!-- Side Menu -->
-    <!-- <div id="side-bar-menu">
-      <h3>Overview</h3>
-      <h3>Transactions</h3>
-      <h3>Budgets</h3>
-      <h3>Pots</h3>
-      <h3>Recurring Bills</h3>
-      <div class="minimize-menu-container">
-        <h3>Minimize Menu</h3>
-      </div>
-    </div> -->
-
-    <!-- Overview Screen-->
-    <section id="overview-page">
-      <h2>Overview</h2>
-      <section id="quick-glance-row">
-        <div class="quick-cards">
-          <p class="quick-card dark-card">Current Balance</p>
-        <!-- Add balance -->
-      
+  <!-- Overview Screen -->
+  <section id="overview-page">
+    <h2>Overview</h2>
+    <section id="quick-glance-row">
+      <div class="quick-cards">
+        <p class="quick-card dark-card">Current Balance</p>
         <p class="quick-card">Income</p>
-        <!-- Add income -->
-      
         <p class="quick-card">Expenses</p>
-        <!-- Add expenses -->
-        </div>
+      </div>
+    </section>
+
+    <section id="columns-container">
+      <!-- Column 1 -->
+      <section id="overview-page-column-1">
+        <section class="overview-section" id="pots-overview-glance">
+          <div class="card-name-container">
+            <h3>Pots</h3>
+            <p>See Details</p>
+          </div>
+        </section>
+        <section class="overview-section" id="transactions-overview-glance">
+          <div class="card-name-container">
+            <h3>Transactions</h3>
+            <p>See Details</p>
+          </div>
+        </section>
       </section>
 
-      <!-- Section below overview cards to keep column containers below -->
-      <section id="columns-container">
-
-        <!-- Column 1 -->
-        <section id="overview-page-column-1">
-          
-          <section id="pots-overview-glance">
-            <div id="card-name-container">
+      <!-- Column 2 -->
+      <section id="overview-page-column-2">
+        <section class="overview-section" id="budgets-overview-glance">
+          <div class="card-name-container">
             <h3>Budgets</h3>
             <p>See Details</p>
           </div>
-            <!-- Add budgets data -->
-          </section>
-
-          <section id="transactions-overview-glance">
-            <div id="card-name-container">
+        </section>
+        <section class="overview-section" id="recurringbills-overview-glance">
+          <div class="card-name-container">
             <h3>Recurring Bills</h3>
             <p>See Details</p>
           </div>
-            <!-- Add budgets data -->
-          </section>
         </section>
-      
-        <!-- Column 2 -->
-        <section id="overview-page-column-2">
-          
-          <section id="budgets-overview-glance">
-            <div id="card-name-container">
-            <h3>Budgets</h3>
-            <p>See Details</p>
-          </div>
-            <!-- Add budgets data -->
-          </section>
-
-          <section id="recurringbills-overview-glance">
-            <div id="card-name-container">
-            <h3>Recurring Bills</h3>
-            <p>See Details</p>
-          </div>
-            <!-- Add budgets data -->
-          </section>
-        </section>
-
-
       </section>
     </section>
-  </body>
+  </section>
+
+</body>
 </html>

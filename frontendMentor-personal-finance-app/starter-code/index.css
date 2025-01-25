@@ -1,38 +1,43 @@
-
-* {
-    box-sizing: border-box;
-}
-
+/* Ensure the body takes the full viewport height */
 body {
     font-family: 'Roboto', sans-serif;
-    /* align-items: center; */
-    /* justify-content: center; */
-    overflow: hidden;
     background-color: pink;
-    margin: 24px;
-}
-
-#overview-page {
-    background-color: yellow;
-    height: 100px;
+    margin: 24px; /* Creates pink space around the entire viewport */
     display: flex;
     flex-direction: column;
-
+    height: calc(100vh - 48px); /* Subtract margin from total viewport height */
+    overflow: hidden; /* Prevents scrolling */
 }
 
+/* Ensure #overview-page fits within the remaining space */
+#overview-page {
+    background-color: yellow;
+    flex: 1; /* Takes up the remaining space inside the body */
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* Adjusts spacing between children */
+}
+
+/* Quick Cards Section */
 .quick-cards {
     display: flex;
-    flex-direction: row;
     gap: 24px;
-    width: 100%;
+    justify-content: space-between; /* Evenly spaces cards horizontally */
+    height: 80%; /* Adjust as needed to fit cards within the viewport */
 }
 
+/* Each card styling */
 .quick-card {
-    width: 437.33px;
-    height: 119px;
+    flex: 1; /* Ensures cards share equal width */
+    max-width: 30%; /* Optional, limits how wide each card can get */
+    height: 100%; /* Cards fill their container's height */
     border-radius: 12px;
     background-color: white;
     color: grey;
+    display: flex;
+    align-items: flex-start; /* Content aligns to the top-left */
+    justify-content: flex-start;
+    padding: 16px;
 }
 
 .dark-card {
@@ -40,70 +45,31 @@ body {
     color: white;
 }
 
-
-/* Columns Container for columns and sections pots, transactions, budgets, recurring bills */ 
-
+/* Columns Container */
 #columns-container {
     display: flex;
-    flex-direction: row;
-    height: 60%;
-    /* background-color: orange; */
     gap: 24px;
+    height: 70%; /* Remaining height after quick cards */
 }
 
-#overview-page-column-1 {
-    width: 45%;
-    height: 100%;
-    background-color: red;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
-}
-
+#overview-page-column-1,
 #overview-page-column-2 {
-    width: 55%;
-    height: 100%;
-    background-color: blue;
+    flex: 1; /* Columns share available space equally */
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-/* Overview cards styling section */
-/* Budget Breakdown Quick Glance Card */
-#pots-overview-glance {
+.overview-section {
+    flex: 1; /* Sections within columns share available space equally */
     background-color: white;
-    height: 218px;
     border-radius: 12px;
+    padding: 16px;
 }
 
-#transactions-overview-glance {
-    background-color: white;
-    height: 519px;
-    border-radius: 12px;
-}
-
-#budgets-overview-glance {
-    background-color: white;
-    height: 410px;
-    border-radius: 12px;
-}
-
-#recurringbills-overview-glance {
-    background-color: white;
-    height: 327px;
-    border-radius: 12px;
-}
-
-
-
-
-/* Styling for the cards naming section */
-#card-name-container {
-    /* background-color: yellow; */
+/* Card Name Container */
+.card-name-container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-left: 24px;
-    padding-right: 24px;
 }
